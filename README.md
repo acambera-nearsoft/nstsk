@@ -24,6 +24,7 @@ Where
   - aws_profile = refers to your aws profile credentials as you have them set on your workstation
   - app_env = refers to an environment or the interviewed name
   - platform = the platform level you are going to create for the task
+
 ```bash
 # Start with the cloud platform level [ mostly network, setup other platforms are going to use this resources]
 $ make apply aws_profile=nstask app_env=natanael-cano platform=cloud
@@ -32,6 +33,5 @@ $ make apply aws_profile=nstask app_env=natanael-cano platform=k8s
 # Once you hav a K8s cluster you can create your K8s resources and deploy the app microservices and operational tools
 $ make apply aws_profile=nstask app_env=natanael-cano platform=services-k8s
 $ make apply aws_profile=nstask app_env=natanael-cano platform=ops-k8s
-
 ```
 
